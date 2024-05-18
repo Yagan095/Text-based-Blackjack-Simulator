@@ -638,7 +638,6 @@ public class Main {
     //main procedure
     public static void main(String[] args) {
         String answer = "";
-        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         //loops till user enters a valid option or quits by inputting end
         while (answer.isEmpty()) {
             patternHeader(40, "BLACKJACK");
