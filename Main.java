@@ -1,7 +1,7 @@
 // BLACKJACK Simulator, allow users to bet "money" and play an x number of games
 // and compete against each other
 // By Isaac Shin
-// Last Updated 11/4/24
+// Last Updated 11/5/24
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
@@ -511,7 +511,9 @@ public class Main {
     public static int[] refillDeck(int[] deck, int numP) {
         int total = 0;
         // count the total of the whole deck list
-        for (int j : deck) { total += j; }
+        for (int j = 0; j < deck.length; j++){
+            total += deck[j];
+        }
         // if there aren't at least 2 cards total in the deck, add 4 to possible card type in the deck
         if (total < 2 * numP) {
             // REF: syntax for italicized text stackoverflow.com/questions/30310147/how-to-print-an-string-variable-as-italicized-text
